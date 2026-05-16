@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLE-Guided Learning Experience AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fb;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f62fe, #001d6c);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #0f62fe;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: #0f62fe;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #001d6c;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background: #0f62fe;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      transition: 0.3s ease;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: #001d6c;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      background: #001d6c;
+      color: white;
+    }
+
+    .highlight {
+      color: #0f62fe;
+      font-weight: 600;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>GLE-Guided Learning Experience AI</h1>
+    <p>IBM SkillsBuild Learning Resources Portal</p>
+  </header>
+
+  <div class="container">
+
+    <h2 class="section-title">Learning Resources</h2>
+
+    <div class="resource-grid">
+
+      <div class="card">
+        <h3>Program Orientation PPT</h3>
+        <p>Access the orientation presentation in PDF format for the session overview.</p>
+
+        <div class="btn-group">
+          <a href="Orientation.pdf" class="btn" target="_blank">View PDF</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Steps to Create IBM Cloud Account</h3>
+        <p>Step-by-step guide to create your IBM Cloud account successfully.</p>
+
+        <div class="btn-group">
+          <a href="steps.pdf" class="btn" target="_blank">View PDF</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>IBM Cloud Tutorial Video</h3>
+        <p>Watch the complete video tutorial for IBM Cloud setup and usage.</p>
+
+        <div class="btn-group">
+          <a href="account.mp4" class="btn" target="_blank">Watch Video</a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>IBM Cloud Storage Creation Video</h3>
+        <p>Watch the complete tutorial on how to create and configure storage on IBM Cloud.</p>
+
+        <div class="btn-group">
+          <a href="storage.mp4" class="btn" target="_blank">Watch Video</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Generative AI Prompt Lab Hands-on</h3>
+        <p>Hands-on practice guide for Generative AI Prompt Lab activities.</p>
+
+        <div class="btn-group">
+          <a href="promptlab.pdf" class="btn" target="_blank">View PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 IBM SkillsBuild Guided Learning Experience</p>
+  </div>
+
+</body>
+</html>
+
